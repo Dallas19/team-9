@@ -12,34 +12,54 @@
         android:id="@+id/editText"
         android:layout_width="248dp"
         android:layout_height="79dp"
+        android:layout_marginStart="516dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="516dp"
+        android:layout_marginBottom="122dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/title_activity_emergency"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="557dp"
-        tools:layout_editor_absoluteY="90dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="419dp"
         android:layout_height="337dp"
-        app:srcCompat="@drawable/blue_phone"
-        tools:layout_editor_absoluteX="431dp"
-        tools:layout_editor_absoluteY="317dp" />
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="82dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:srcCompat="@drawable/blue_phone" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="370dp"
         android:layout_height="323dp"
-        app:srcCompat="@drawable/diabetes"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="317dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="317dp"
+        android:layout_marginBottom="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/diabetes" />
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="328dp"
         android:layout_height="348dp"
-        app:srcCompat="@drawable/seizure"
-        tools:layout_editor_absoluteX="936dp"
-        tools:layout_editor_absoluteY="306dp" />
+        android:layout_marginTop="306dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="82dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/seizure" />
 </androidx.constraintlayout.widget.ConstraintLayout>
