@@ -10,14 +10,14 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="248dp"
-        android:layout_height="79dp"
+        android:layout_width="480dp"
+        android:layout_height="106dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/title_activity_emergency"
-        android:textSize="36sp"
-        tools:layout_editor_absoluteX="557dp"
-        tools:layout_editor_absoluteY="90dp" />
+        android:text="EMERGENCY"
+        android:textSize="75sp"
+        tools:layout_editor_absoluteX="431dp"
+        tools:layout_editor_absoluteY="86dp" />
 
     <ImageButton
         android:id="@+id/imageButton"
