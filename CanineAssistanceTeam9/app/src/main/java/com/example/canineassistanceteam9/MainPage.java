@@ -27,8 +27,8 @@ public class MainPage extends AppCompatActivity implements View.OnClickListener 
         setContentView(R.layout.activity_main);
 
 
-        Button button1 = findViewById(R.id.aButton);
-        Button button2 = findViewById(R.id.button3);
+        ImageButton button1 =  findViewById(R.id.imageButton8);
+        ImageButton button2 =  findViewById(R.id.imageButton10);
 
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
@@ -41,11 +41,11 @@ public class MainPage extends AppCompatActivity implements View.OnClickListener 
     @Override
     public void onClick(View v){
         switch(v.getId()){
-            case R.id.aButton:
+            case R.id.imageButton8:
                 openEmergency();
                 break;
 
-            case R.id.button3:
+            case R.id.imageButton10:
                 openActivityNeeds();
 
 

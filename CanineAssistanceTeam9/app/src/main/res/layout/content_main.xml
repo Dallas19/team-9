@@ -24,22 +24,33 @@
         android:id="@+id/imageButton8"
         android:layout_width="592dp"
         android:layout_height="540dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="27dp"
         android:src="@drawable/emergency"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="78dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton10"
         android:layout_width="503dp"
         android:layout_height="556dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="45dp"
         android:src="@drawable/needs"
-        tools:layout_editor_absoluteX="706dp"
-        tools:layout_editor_absoluteY="78dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="593dp"
         android:layout_height="155dp"
+        android:layout_marginStart="50dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="EMERGENCY"
@@ -47,19 +58,20 @@
         android:textColorHighlight="#9C27B0"
         android:textColorHint="#3F51B5"
         android:textSize="100sp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="656dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editText4"
         android:layout_width="460dp"
         android:layout_height="121dp"
+        android:layout_marginEnd="49dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="NEEDS"
         android:textColor="#2196F3"
         android:textSize="100sp"
-        tools:layout_editor_absoluteX="771dp"
-        tools:layout_editor_absoluteY="690dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
