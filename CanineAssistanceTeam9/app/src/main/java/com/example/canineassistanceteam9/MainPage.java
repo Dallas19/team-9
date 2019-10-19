@@ -19,7 +19,7 @@ import androidx.appcompat.widget.Toolbar;
 
 public class MainPage extends AppCompatActivity {
     private Button buttonA, buttonB;
-    ImageButton setting_button;
+    //ImageButton setting_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
