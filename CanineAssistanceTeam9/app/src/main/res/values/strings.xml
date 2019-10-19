@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Canine Assistance Team 9</string>
     <string name="action_settings">Settings</string>
+    <string name="Needs">Needs</string>
+    <string name="Emergency">Emergency</string>
+    <string name="doggy_needs">Hey doggy ya need something?</string>
 </resources>
