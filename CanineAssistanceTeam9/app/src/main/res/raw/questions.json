@@ -1,0 +1,46 @@
+{
+  "Questions": {"q1":{"Desc":"Does the dog need something or is it an emergency?",
+      "o1":"Needs",
+      "o1_action":"q2",
+      "o2":"Emergency",
+      "o2_action":"q3"
+    },
+    "q2":{
+      "Desc":"What does the dog need?",
+      "o1":"Go out",
+      "o1_action":"q4",
+      "o2":"Consumption",
+      "o2_action":"q5"
+    },
+    "q3":{
+      "Desc":"What emergency is it?",
+      "o1":"Diabetes",
+      "o1_action":"q6",
+      "o2":"Seizure",
+      "o2_action":"-1",
+      "o3":"Call 911",
+      "o3_action":"-1"
+    },
+    "q4":{
+      "Desc":"What does the dog need to go out for?",
+      "o1":"Play",
+      "o1_action":"-1",
+      "o2":"Bathroom",
+      "o2_action":"-1"
+    },
+    "q5":{
+      "Desc":"What consumption item does the dog want?",
+      "o1":"Water",
+      "o1_action":"-1",
+      "o2":"Food",
+      "o2_action":"-1"
+    },
+    "q6":{
+      "Desc":"What emergency related to diabetes?",
+      "o1":"Low Sugar",
+      "o1_action":"-1",
+      "o2":"High Sugar",
+      "o2_action":"-1"
+    }
+}  
+}
