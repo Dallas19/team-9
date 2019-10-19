@@ -4,27 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0C0C0C"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Main2Activity"
     tools:showIn="@layout/activity_main2">
 
+
     <EditText
 
-        android:layout_width="248dp"
-        android:layout_height="79dp"
+        android:layout_width="667dp"
+        android:layout_height="165dp"
         android:layout_marginStart="516dp"
         android:layout_marginTop="116dp"
         android:layout_marginEnd="516dp"
         android:layout_marginBottom="122dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/title_activity_emergency"
-        android:textSize="36sp"
+        android:text="EMERGENCY"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:textSize="100sp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -32,35 +36,85 @@
         android:layout_height="337dp"
         android:layout_marginStart="65dp"
         android:layout_marginEnd="86dp"
-        android:layout_marginBottom="82dp"
+        android:layout_marginBottom="196dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton3"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
         app:srcCompat="@drawable/blue_phone" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="370dp"
-        android:layout_height="323dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="317dp"
+        android:layout_width="374dp"
+        android:layout_height="335dp"
         android:layout_marginBottom="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.688"
         app:srcCompat="@drawable/diabetes" />
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="328dp"
         android:layout_height="348dp"
-        android:layout_marginTop="306dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="82dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.709"
         app:srcCompat="@drawable/seizure" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="332dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="195dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="71dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="911"
+        android:textColor="@android:color/background_light"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editText8"
+        app:layout_constraintStart_toEndOf="@+id/editText9"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="332dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Seizure"
+        android:textColor="@android:color/background_light"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="332dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Diabetes"
+        android:textColor="@android:color/background_light"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editText7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

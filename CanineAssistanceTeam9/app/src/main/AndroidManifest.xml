@@ -23,6 +23,12 @@
                 android:value="com.example.canineassistanceteam9.MainPage" />
         </activity>
         <activity
+            android:name=".pushNotification">
+
+        </activity>
+
+
+        <activity
             android:name=".MainPage"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
@@ -38,11 +44,27 @@
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
+<<<<<<< HEAD
             android:theme="@style/AppTheme.NoActionBar"></activity>
+=======
+
+            android:theme="@style/AppTheme.NoActionBar" />
+
+>>>>>>> 62e526c7162989049b07c733e15cb273c243e700
         <activity
             android:name=".emergency"
             android:label="@string/title_activity_emergency"
             android:theme="@style/AppTheme.NoActionBar" />
+<<<<<<< HEAD
+=======
+
+        <activity android:name=".QuestionPage">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2Activity" />
+        </activity>
+
+>>>>>>> 62e526c7162989049b07c733e15cb273c243e700
     </application>
 
 </manifest>

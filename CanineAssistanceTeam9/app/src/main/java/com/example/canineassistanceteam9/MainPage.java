@@ -17,14 +17,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 
-public class MainPage extends AppCompatActivity {
-    private Button button;
-    ImageButton setting_button;
+public class MainPage extends AppCompatActivity implements View.OnClickListener {
+   // private Button buttonA, buttonB;
+  //  ImageButton setting_button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
         button = findViewById(R.id.aButton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,10 +42,72 @@ public class MainPage extends AppCompatActivity {
                 openQuestionPage();
             }
         });
+=======
+
+        ImageButton button1 =  findViewById(R.id.imageButton8);//emergency
+        ImageButton button2 =  findViewById(R.id.imageButton10);//needs
+
+        button1.setOnClickListener(this);
+        button2.setOnClickListener(this);
+
+
+
+
+        }
+
+    @Override
+    public void onClick(View v){
+        switch(v.getId()){
+            case R.id.imageButton8:
+                openEmergency();
+                break;
+
+            case R.id.imageButton10:
+                openActivityNeeds();
+
+
+        }
+
+>>>>>>> 62e526c7162989049b07c733e15cb273c243e700
     }
 
-    public void openNewActivity (){
+
+//        buttonA = findViewById(R.id.aButton);
+//        buttonA.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openEmergency();
+//            }
+//
+//        });
+//
+//
+//
+//
+//        buttonB = findViewById(R.id.button3);
+//        buttonB.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openActivityNeeds();
+//            }
+//        });
+
+//        setting_button =(ImageButton) findViewById(R.id.setting_button);
+//        setting_button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                //openQuestionPage();
+//            }
+//        });
+
+
+
+    public void openEmergency (){
         Intent intent = new Intent(this, Main2Activity.class);
+        startActivity(intent);
+    }
+    public void openActivityNeeds (){
+        Intent intent = new Intent(this, activity_needs.class);
         startActivity(intent);
     }
 

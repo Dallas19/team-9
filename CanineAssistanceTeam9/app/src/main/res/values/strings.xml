@@ -5,6 +5,9 @@
     <string name="needs_button">Needs</string>
     <string name="emergency_button">Emergency</string>
     <string name="dog_screen_title">Hey boy need something?</string>
+    <string name="dog_play">Play!</string>
+    <string name="dog_eat">Eat!</string>
+    <string name="dog_drink">Water!</string>
 
     <string-array name="questions">
         <item>Q. Does the dog need something or is it an emergency?</item>
