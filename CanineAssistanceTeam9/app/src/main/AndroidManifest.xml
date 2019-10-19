@@ -23,6 +23,12 @@
         </service>
 
         <activity
+            android:name=".pushNotification">
+
+        </activity>
+
+
+        <activity
             android:name=".MainPage"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
@@ -30,7 +36,6 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".activity_needs"
