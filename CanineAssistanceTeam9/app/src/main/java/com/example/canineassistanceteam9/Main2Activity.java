@@ -10,6 +10,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -24,7 +25,9 @@ public class Main2Activity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         ImageView diabetes = (ImageView) findViewById(R.id.imageButton2);
-        FloatingActionButton fab = findViewById(R.id.fab);
+        ImageView e911 = (ImageView) findViewById(R.id.imageButton);
+        ImageView seizure = (ImageView) findViewById(R.id.imageButton3);
+        //FloatingActionButton fab = findViewById(R.id.fab);
         diabetes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,11 +36,32 @@ public class Main2Activity extends AppCompatActivity {
                 //needs to reference to the a diabetes page
                 //startActivity(new Intent(Main2Activity.this, InsurancePage.class));
 
-                final MediaPlayer mp = MediaPlayer.create(this, R.raw.soho);
-                mp.start();
+                playSound();
 
             }
         });
+
+        e911.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                playSound();//make a new function to change the sound
+
+            }
+        });
+
+        seizure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                playSound();//make a new function to change the sound
+
+            }
+        });
+
+        }
+
+        public void playSound(){
+            MediaPlayer player = MediaPlayer.create(this,R.raw.beep);
+            player.start();
     }
 
 }
