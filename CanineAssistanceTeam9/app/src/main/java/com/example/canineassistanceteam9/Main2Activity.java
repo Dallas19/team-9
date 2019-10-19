@@ -10,6 +10,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -33,8 +34,9 @@ public class Main2Activity extends AppCompatActivity {
                 //needs to reference to the a diabetes page
                 //startActivity(new Intent(Main2Activity.this, InsurancePage.class));
 
-                final MediaPlayer mp = MediaPlayer.create(this, R.raw.soho);
-                mp.start();
+                /*MediaPlayer player = MediaPlayer.create(this,
+                        Settings.System.DEFAULT_RINGTONE_URI);
+                player.start();*/
 
             }
         });

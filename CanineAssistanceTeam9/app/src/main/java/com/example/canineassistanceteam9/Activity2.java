@@ -11,7 +11,7 @@ public class Activity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
-        ScrollView aScrollView =(ScrollView)
-        findViewById(R.id.myScr)
+        //ScrollView aScrollView =(ScrollView);
+        //findViewById(R.id.myScr)
     }
 }
