@@ -17,32 +17,62 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 
-public class MainPage extends AppCompatActivity {
-    private Button buttonA, buttonB;
+public class MainPage extends AppCompatActivity implements View.OnClickListener {
+   // private Button buttonA, buttonB;
   //  ImageButton setting_button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonA = findViewById(R.id.aButton);
-        buttonA.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+
+        Button button1 = findViewById(R.id.aButton);
+        Button button2 = findViewById(R.id.button3);
+
+        button1.setOnClickListener(this);
+        button2.setOnClickListener(this);
+
+
+
+
+        }
+
+    @Override
+    public void onClick(View v){
+        switch(v.getId()){
+            case R.id.aButton:
                 openEmergency();
-            }
+                break;
 
-        });
-
-
-
-        buttonB = findViewById(R.id.button3);
-        buttonB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+            case R.id.button3:
                 openActivityNeeds();
-            }
-        });
+
+
+        }
+
+    }
+
+
+//        buttonA = findViewById(R.id.aButton);
+//        buttonA.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openEmergency();
+//            }
+//
+//        });
+//
+//
+//
+//
+//        buttonB = findViewById(R.id.button3);
+//        buttonB.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openActivityNeeds();
+//            }
+//        });
 
 //        setting_button =(ImageButton) findViewById(R.id.setting_button);
 //        setting_button.setOnClickListener(new View.OnClickListener() {
@@ -51,7 +81,7 @@ public class MainPage extends AppCompatActivity {
 //                //openQuestionPage();
 //            }
 //        });
-    }
+
 
 
     public void openEmergency (){
