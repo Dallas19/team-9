@@ -19,7 +19,7 @@ import androidx.appcompat.widget.Toolbar;
 
 public class MainPage extends AppCompatActivity {
     private Button buttonA, buttonB;
-    ImageButton setting_button;
+  //  ImageButton setting_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +31,10 @@ public class MainPage extends AppCompatActivity {
             public void onClick(View v) {
                 openEmergency();
             }
+
         });
+
+
 
         buttonB = findViewById(R.id.button3);
         buttonB.setOnClickListener(new View.OnClickListener() {
@@ -50,11 +53,11 @@ public class MainPage extends AppCompatActivity {
 //        });
     }
 
+
     public void openEmergency (){
         Intent intent = new Intent(this, Main2Activity.class);
         startActivity(intent);
     }
-
     public void openActivityNeeds (){
         Intent intent = new Intent(this, activity_needs.class);
         startActivity(intent);
