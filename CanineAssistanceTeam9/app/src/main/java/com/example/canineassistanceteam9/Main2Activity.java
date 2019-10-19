@@ -25,7 +25,9 @@ public class Main2Activity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         ImageView diabetes = (ImageView) findViewById(R.id.imageButton2);
-        FloatingActionButton fab = findViewById(R.id.fab);
+        ImageView e911 = (ImageView) findViewById(R.id.imageButton);
+        ImageView seizure = (ImageView) findViewById(R.id.imageButton3);
+        //FloatingActionButton fab = findViewById(R.id.fab);
         diabetes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,6 +40,23 @@ public class Main2Activity extends AppCompatActivity {
 
             }
         });
+
+        e911.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                playSound();//make a new function to change the sound
+
+            }
+        });
+
+        seizure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                playSound();//make a new function to change the sound
+
+            }
+        });
+
         }
 
         public void playSound(){
