@@ -37,6 +37,7 @@ public class Main2Activity extends AppCompatActivity {
                 //startActivity(new Intent(Main2Activity.this, InsurancePage.class));
 
                 playSound();
+                reset();
 
             }
         });
@@ -45,7 +46,7 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 playSound();//make a new function to change the sound
-
+                reset();
             }
         });
 
@@ -53,6 +54,7 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 playSound();//make a new function to change the sound
+                reset();
 
             }
         });
@@ -62,6 +64,24 @@ public class Main2Activity extends AppCompatActivity {
         public void playSound(){
             MediaPlayer player = MediaPlayer.create(this,R.raw.beep);
             player.start();
+            onComplete(player);
+            //player.release();
+    }
+
+    public void onComplete(MediaPlayer mp){
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+            }
+        });
+
+        }
+
+    //go back to beginning screen
+    public void reset(){
+        Intent intent = new Intent(this, MainPage.class);
+        startActivity(intent);
     }
 
 }

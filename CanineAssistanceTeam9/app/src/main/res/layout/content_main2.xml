@@ -73,35 +73,48 @@
         android:id="@+id/editText7"
         android:layout_width="332dp"
         android:layout_height="150dp"
+        android:layout_marginStart="195dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="71dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="911"
         android:textColor="@android:color/background_light"
         android:textSize="100sp"
-        tools:layout_editor_absoluteX="547dp"
-        tools:layout_editor_absoluteY="657dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editText8"
+        app:layout_constraintStart_toEndOf="@+id/editText9"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
     <EditText
         android:id="@+id/editText8"
         android:layout_width="332dp"
         android:layout_height="150dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="2dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Seizure"
         android:textColor="@android:color/background_light"
         android:textSize="100sp"
-        tools:layout_editor_absoluteX="939dp"
-        tools:layout_editor_absoluteY="665dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
 
     <EditText
         android:id="@+id/editText9"
         android:layout_width="332dp"
         android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="41dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Diabetes"
         android:textColor="@android:color/background_light"
         android:textSize="80sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="647dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editText7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
