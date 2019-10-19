@@ -4,45 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-
-    <Button
-        android:id="@+id/aButton"
-        android:layout_width="286dp"
-        android:layout_height="228dp"
-        android:layout_marginEnd="92dp"
-
-        android:text="@string/emergency_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.431"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.522" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="311dp"
-        android:layout_height="233dp"
-        android:layout_marginEnd="176dp"
-        android:text="@string/needs_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="639dp"
-        android:layout_height="78dp"
-        android:text="@string/dog_screen_title"
-        android:textSize="50sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.21" />
 
     <ImageButton
         android:id="@+id/setting_button"
@@ -55,5 +19,47 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="592dp"
+        android:layout_height="540dp"
+        android:src="@drawable/emergency"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="503dp"
+        android:layout_height="556dp"
+        android:src="@drawable/needs"
+        tools:layout_editor_absoluteX="706dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="593dp"
+        android:layout_height="155dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="EMERGENCY"
+        android:textColor="#4CAF50"
+        android:textColorHighlight="#9C27B0"
+        android:textColorHint="#3F51B5"
+        android:textSize="100sp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="656dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="460dp"
+        android:layout_height="121dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="NEEDS"
+        android:textColor="#2196F3"
+        android:textSize="100sp"
+        tools:layout_editor_absoluteX="771dp"
+        tools:layout_editor_absoluteY="690dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
