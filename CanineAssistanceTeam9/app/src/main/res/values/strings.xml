@@ -2,6 +2,9 @@
     <string name="app_name">Canine Assistance Team 9</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_emergency">emergency</string>
+    <string name="needs_button">Needs</string>
+    <string name="emergency_button">Emergency</string>
+    <string name="dog_screen_title">Hey boy need something?</string>
 
     <string name="need_water_notification_title_template">Need water: %1$s</string>
 
