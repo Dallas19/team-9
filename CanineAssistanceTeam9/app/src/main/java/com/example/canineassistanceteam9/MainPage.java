@@ -27,8 +27,8 @@ public class MainPage extends AppCompatActivity implements View.OnClickListener 
         setContentView(R.layout.activity_main);
 
 
-        ImageButton button1 =  findViewById(R.id.imageButton8);
-        ImageButton button2 =  findViewById(R.id.imageButton10);
+        ImageButton button1 =  findViewById(R.id.imageButton8);//emergency
+        ImageButton button2 =  findViewById(R.id.imageButton10);//needs
 
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
