@@ -42,11 +42,6 @@
             android:name=".emergency"
             android:label="@string/title_activity_emergency"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".QuestionPage">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Main2Activity" />
-        </activity>
 
     </application>
 
