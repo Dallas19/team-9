@@ -4,40 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
-    tools:showIn="@layout/activity_main"
-    tools:ignore="ExtraText">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+
 
     <Button
         android:id="@+id/button"
         android:layout_width="286dp"
         android:layout_height="228dp"
-        android:text="Button"
+        android:layout_marginEnd="92dp"
+        android:onClick="newPage"
+        android:text="@string/needs_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.497" />
+        app:layout_constraintVertical_bias="0.511" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="311dp"
         android:layout_height="233dp"
-        android:layout_marginEnd="88dp"
-        android:text="Button"
+        android:layout_marginEnd="220dp"
+        android:text="@string/emergency_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.494" />
+        app:layout_constraintVertical_bias="0.515" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="262dp"
-        android:layout_height="71dp"
-        android:text="TextView"
-        android:textSize="36sp"
-        tools:layout_editor_absoluteX="319dp"
-        tools:layout_editor_absoluteY="287dp" />
+        android:layout_width="639dp"
+        android:layout_height="78dp"
+        android:text="@string/dog_screen_title"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
