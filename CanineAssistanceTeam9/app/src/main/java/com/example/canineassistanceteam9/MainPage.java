@@ -24,8 +24,6 @@ public class MainPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         buttonA = findViewById(R.id.aButton);
         buttonA.setOnClickListener(new View.OnClickListener() {
@@ -62,10 +60,10 @@ public class MainPage extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openQuestionPage(){
-        Intent intent = new Intent(this, QuestionPage.class);
-        startActivity(intent);
-    }
+//    public void openQuestionPage(){
+//        Intent intent = new Intent(this, QuestionPage.class);
+//        startActivity(intent);
+//    }
 
 }
 
