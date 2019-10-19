@@ -8,4 +8,37 @@
     tools:context=".Main2Activity"
     tools:showIn="@layout/activity_main2">
 
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/title_activity_emergency"
+        tools:layout_editor_absoluteX="504dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="419dp"
+        android:layout_height="337dp"
+        app:srcCompat="@drawable/blue_phone"
+        tools:layout_editor_absoluteX="431dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="370dp"
+        android:layout_height="323dp"
+        app:srcCompat="@drawable/diabetes"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="328dp"
+        android:layout_height="348dp"
+        app:srcCompat="@drawable/seizure"
+        tools:layout_editor_absoluteX="936dp"
+        tools:layout_editor_absoluteY="306dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
