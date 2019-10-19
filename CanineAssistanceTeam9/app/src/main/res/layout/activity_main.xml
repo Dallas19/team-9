@@ -27,7 +27,8 @@
         android:id="@+id/setting_button"
         android:layout_width="67dp"
         android:layout_height="63dp"
-        android:src="@drawable/ic_settings_black" />
+        android:src="@drawable/ic_settings_black"
+        android:contentDescription="TODO" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
