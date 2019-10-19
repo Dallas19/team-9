@@ -40,27 +40,36 @@
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/dogfood"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="323dp" />
+        android:layout_width="400dp"
+        android:layout_height="348dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.405"
+        app:srcCompat="@drawable/dogfood" />
 
     <ImageButton
         android:id="@+id/imageButton5"
         android:layout_width="348dp"
         android:layout_height="364dp"
-        app:srcCompat="@drawable/dogplay"
-        tools:layout_editor_absoluteX="688dp"
-        tools:layout_editor_absoluteY="344dp" />
+        android:layout_marginEnd="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.417"
+        app:srcCompat="@drawable/dogplay" />
 
     <ImageButton
         android:id="@+id/imageButton6"
         android:layout_width="418dp"
         android:layout_height="353dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.409"
         app:srcCompat="@drawable/water"
-        tools:layout_editor_absoluteX="1148dp"
-        tools:layout_editor_absoluteY="355dp" />
+        tools:layout_editor_absoluteX="1031dp" />
 
     <ImageButton
         android:id="@+id/imageButton7"
@@ -77,5 +86,46 @@
         app:srcCompat="@drawable/download"
         tools:layout_editor_absoluteX="2239dp"
         tools:layout_editor_absoluteY="360dp" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/dog_eat"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintVertical_bias="0.343" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dog_play"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dog_drink"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:layout_constraintVertical_bias="0.328" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

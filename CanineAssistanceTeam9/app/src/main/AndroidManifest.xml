@@ -43,15 +43,40 @@
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
 
+<<<<<<< HEAD
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainPage"
+            android:label="@string/title_activity_main2"
+
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name=
+                    "android.intent.action.MAIN" />
+
+                <category android:name=
+                    "android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+=======
             android:theme="@style/AppTheme.NoActionBar" >
 
 
         </activity>
 
+>>>>>>> 3c0394785b832aaed5dbe5a0841498651b0ee0cf
         <activity
             android:name=".emergency"
             android:label="@string/title_activity_emergency"
             android:theme="@style/AppTheme.NoActionBar" />
+<<<<<<< HEAD
+        <activity android:name=".QuestionPage">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2Activity" />
+        </activity>
+=======
+>>>>>>> 3c0394785b832aaed5dbe5a0841498651b0ee0cf
 
     </application>
 
