@@ -6,6 +6,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+<<<<<<< HEAD
+import android.widget.ImageButton;
+=======
+>>>>>>> 553d8edee8709da6c5b6b3cb819f3616ec181ba5
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,15 +34,40 @@ public class MainPage extends AppCompatActivity {
             public void onClick(View v) {
                 openNewActivity();
             }
+<<<<<<< HEAD
+        });
+
+        ImageButton setting_image;
+        setting_image =  (ImageButton) findViewById(R.id.setting_button);
+
+        setting_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent questionPage = new Intent(this, QuestionPage);
+                startActivity (questionPage);
+            }
+=======
+>>>>>>> 553d8edee8709da6c5b6b3cb819f3616ec181ba5
         });
 
     }
 
 
 
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+
+
+
+
+=======
+>>>>>>> 670fe8a40011cf80d306aebcb4ba6456e7aa153f
 public void openNewActivity (){
         Intent intent = new Intent(this, Main2Activity.class);
         startActivity(intent);
+>>>>>>> 553d8edee8709da6c5b6b3cb819f3616ec181ba5
 }
 
 }
