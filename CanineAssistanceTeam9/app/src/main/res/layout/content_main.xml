@@ -11,11 +11,11 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/aButton"
         android:layout_width="286dp"
         android:layout_height="228dp"
         android:layout_marginEnd="92dp"
-        android:onClick="newPage"
+
         android:text="@string/needs_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button3"
