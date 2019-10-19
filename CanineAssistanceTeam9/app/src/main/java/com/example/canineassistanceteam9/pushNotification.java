@@ -37,33 +37,32 @@ public class pushNotification extends AppCompatActivity {
                 sendPush();
             }
         });
+
     }
 
     public void sendPush(){
         //FirebaseInstanceId.getInstance().getInstanceId();
-        FirebaseMessagingServices
+       // FirebaseMessagingServices
     }
 
 }
- class FirebaseMessagingServices extends FirebaseMessagingService{
-    /*FirebaseInstanceId.getInstance().getInstanceId()
-        .addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
-         @Override
-         public void onComplete(@NonNull Task<InstanceIdResult> task) {
-             if (!task.isSuccessful()) {
-                 Log.w(TAG, "getInstanceId failed", task.getException());
-                 return;
-             }
+ /*class FirebaseMessagingServices extends FirebaseMessagingService{
+     @Override
+     public void onNewToken(String s) {
+         super.onNewToken(s);
+         Log.e("newToken", s);
+         getSharedPreferences("_", MODE_PRIVATE).edit().putString("fb", s).apply();
+     }
 
-             // Get new Instance ID token
-             String token = task.getResult().getToken();
+     @Override
+     public void onMessageReceived(RemoteMessage remoteMessage) {
+         super.onMessageReceived(remoteMessage);
+     }
 
-             // Log and toast
-             String msg = getString(R.string.msg_token_fmt, token);
-             Log.d(TAG, msg);
-             Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
-         }
-     });
+     public static String getToken(Context context) {
+         return context.getSharedPreferences("_", MODE_PRIVATE).getString("fb", "empty");
+     }
+ }
 
      /**
       * Called if InstanceID token is updated. This may occur if the security of
@@ -71,7 +70,7 @@ public class pushNotification extends AppCompatActivity {
       * is initially generated so this is where you would retrieve the token.
       */
 
-     @Override
+    /* @Override
      public void onNewToken(String token) {
          Log.d(TAG, "Refreshed token: " + token);
 
@@ -85,5 +84,5 @@ public class pushNotification extends AppCompatActivity {
          System.out.println(token);
      }
 
- }
+ }*/
 
