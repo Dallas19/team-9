@@ -20,16 +20,12 @@
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
-<<<<<<< HEAD
             android:theme="@style/AppTheme.NoActionBar" />
-=======
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
->>>>>>> 0c0870a6c3a004e5edede6a3dc5d0f0bf6c5e476
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
         <activity
             android:name=".emergency"
             android:label="@string/title_activity_emergency"
