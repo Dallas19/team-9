@@ -10,6 +10,16 @@
 
     <EditText
         android:id="@+id/editText"
+<<<<<<< HEAD
+        android:layout_width="480dp"
+        android:layout_height="106dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="EMERGENCY"
+        android:textSize="75sp"
+        tools:layout_editor_absoluteX="431dp"
+        tools:layout_editor_absoluteY="86dp" />
+=======
         android:layout_width="248dp"
         android:layout_height="79dp"
         android:layout_marginStart="516dp"
@@ -24,6 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> 16257ab359ff530e18354988af352b9a1f3768fa
 
     <ImageButton
         android:id="@+id/imageButton"
