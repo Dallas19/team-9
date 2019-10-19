@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "979415860118",
+    "firebase_url": "https://canineassistant-4c339.firebaseio.com",
+    "project_id": "canineassistant-4c339",
+    "storage_bucket": "canineassistant-4c339.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979415860118:android:fb0af17c18f30f3f3693b7",
+        "android_client_info": {
+          "package_name": "com.example.canineassistanceteam9"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979415860118-n5p1o1n0f18b1cjveaner74iljmn2ibv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeo16fxOGXbh5AJWymRBThzno468Mq9TY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "979415860118-n5p1o1n0f18b1cjveaner74iljmn2ibv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
