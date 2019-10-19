@@ -34,12 +34,15 @@ public class Main2Activity extends AppCompatActivity {
                 //needs to reference to the a diabetes page
                 //startActivity(new Intent(Main2Activity.this, InsurancePage.class));
 
-                /*MediaPlayer player = MediaPlayer.create(this,
-                        Settings.System.DEFAULT_RINGTONE_URI);
-                player.start();*/
+                playSound();
 
             }
         });
+        }
+
+        public void playSound(){
+            MediaPlayer player = MediaPlayer.create(this,R.raw.beep);
+            player.start();
     }
 
 }
