@@ -25,7 +25,7 @@ public class QuestionPage extends AppCompatActivity {
         lv=findViewById(R.id.listv);
         ArrayAdapter<String> ada=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,days);
         lv.setAdapter(ada);
-        lv.setOnItemClickListener(this);
+        lv.setOnItemClickListener((AdapterView.OnItemClickListener) this);
     }
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
