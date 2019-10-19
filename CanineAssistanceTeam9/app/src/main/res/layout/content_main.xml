@@ -27,20 +27,22 @@
         android:text="@string/Needs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintHorizontal_bias="0.372"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522"
         tools:text="needs" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="318dp"
         android:layout_height="216dp"
-        android:layout_marginEnd="180dp"
+        android:layout_marginEnd="220dp"
         android:text="@string/Emergency"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541"
         tools:text="emergency" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
