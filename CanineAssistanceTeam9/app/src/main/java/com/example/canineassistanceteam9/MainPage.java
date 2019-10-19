@@ -14,22 +14,24 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 
-public class MainPage extends AppCompatActivity implements AdapterView.OnItemClickListener{
+public class MainPage extends Main2Activity implements AdapterView.OnItemClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        Button button = (Button) findViewById(button);
+        setSupportActionBar(button);
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
-            @Override
+
+            //@Override
             public void onClick(View view) {
-                Snackbar.make(view, "Question", Snackbar.LENGTH_LONG)
-                        .setAction("New page", null).show();
+                Intent newPage = new Intent(this, DisplayMessageActivity.class);
+                startActivity(newPage);
             }
+
         });
     }
 
