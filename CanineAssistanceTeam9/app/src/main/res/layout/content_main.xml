@@ -5,7 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
+<<<<<<< HEAD
     tools:context=".MainPage"
+=======
+    tools:context=".Main2Activity"
+>>>>>>> 0c0870a6c3a004e5edede6a3dc5d0f0bf6c5e476
     tools:showIn="@layout/activity_main"
     tools:ignore="ExtraText"><![CDATA[
 

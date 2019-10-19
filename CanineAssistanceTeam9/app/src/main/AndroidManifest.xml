@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
+        android:screenOrientation="landscape"
+        android:configChanges="keyboardHidden|orientation"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,25 +20,24 @@
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
+<<<<<<< HEAD
             android:theme="@style/AppTheme.NoActionBar" />
+=======
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+>>>>>>> 0c0870a6c3a004e5edede6a3dc5d0f0bf6c5e476
         <activity
             android:name=".emergency"
             android:label="@string/title_activity_emergency"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".QuestionPage">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".Main2Activity" />
         </activity>
     </application>
 
