@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,7 +19,7 @@ import androidx.appcompat.widget.Toolbar;
 
 public class MainPage extends AppCompatActivity {
     private Button button;
-
+    ImageButton setting_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,14 +33,24 @@ public class MainPage extends AppCompatActivity {
             }
         });
 
+        setting_button =(ImageButton) findViewById(R.id.setting_button);
+        setting_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //openQuestionPage();
+            }
+        });
     }
-
-
 
     public void openNewActivity (){
         Intent intent = new Intent(this, Main2Activity.class);
         startActivity(intent);
     }
+
+//    public void openQuestionPage(){
+//        Intent intent = new Intent(this, QuestionPage.class);
+//        startActivity(intent);
+//    }
 
 }
 
