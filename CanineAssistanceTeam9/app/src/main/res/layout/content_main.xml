@@ -13,7 +13,7 @@
         android:id="@+id/imageButton"
         android:layout_width="402dp"
         android:layout_height="343dp"
-        app:srcCompat="@drawable/bluePhone"
+        app:srcCompat="@drawable/blue_phone"
         tools:layout_editor_absoluteX="3dp"
         tools:layout_editor_absoluteY="271dp" />
 
