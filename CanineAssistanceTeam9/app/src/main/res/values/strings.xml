@@ -22,4 +22,5 @@
     <string name="action_reply">Reply</string>
     <string name="push">Push</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_needs">activity_needs</string>
 </resources>
