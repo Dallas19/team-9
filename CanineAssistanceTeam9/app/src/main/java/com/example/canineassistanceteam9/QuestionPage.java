@@ -15,23 +15,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class QuestionPage extends AppCompatActivity {
+public class QuestionPage extends AppCompatActivity implements AdapterView.OnItemClickListener{
     ListView lv;
     String days[]={"Monday","Tuesday","Wednesday"};
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        lv=findViewById(R.id.listv);
-        ArrayAdapter<String> ada=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,days);
-        lv.setAdapter(ada);
-        lv.setOnItemClickListener(this);
-    }
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        TextView txt = (TextView) view;
-        Toast.makeText(getApplicationContext(), "u have selected" + txt.getText(), Toast.LENGTH_SHORT).show();
-    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +28,11 @@ public class QuestionPage extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        lv=findViewById(R.id.listv);
+        ArrayAdapter<String> ada=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,days);
+        lv.setAdapter(ada);
+        lv.setOnItemClickListener(this);
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +40,13 @@ public class QuestionPage extends AppCompatActivity {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });it
+        });
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        TextView txt = (TextView) view;
+        Toast.makeText(getApplicationContext(), "u have selected" + txt.getText(), Toast.LENGTH_SHORT).show();
     }
 
 }
