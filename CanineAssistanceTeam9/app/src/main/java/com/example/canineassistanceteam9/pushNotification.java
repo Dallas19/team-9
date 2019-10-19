@@ -41,7 +41,7 @@ public class pushNotification extends AppCompatActivity {
 
     public void sendPush(){
         //FirebaseInstanceId.getInstance().getInstanceId();
-        FirebaseMessagingServices
+        //FirebaseMessagingServices;
     }
 
 }

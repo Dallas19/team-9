@@ -6,6 +6,28 @@
     <string name="emergency_button">Emergency</string>
     <string name="dog_screen_title">Hey boy need something?</string>
 
+    <string-array name="questions">
+        <item>Q. Does the dog need something or is it an emergency?</item>
+        <item>• Needs</item>
+        <item>• Emergency</item>
+        <item>Q. What does the dog need?</item>
+        <item>• Go out</item>
+        <item>• Consumption</item>
+        <item>Q. What does the dog need to go out for?</item>
+        <item>• Play</item>
+        <item>• Bathroom</item>
+        <item>Q. What does the dog want to consume?</item>
+        <item>• Water</item>
+        <item>• Food</item>
+        <item>Q. What emergency is it?</item>
+        <item>• Diabetes</item>
+        <item>• Seizure</item>
+        <item>• Call 911</item>
+        <item>Q. What emergency related to diabetes?</item>
+        <item>• Low Sugar</item>
+        <item>• High Sugar</item>
+    </string-array>
+
 
     <string name="action_share">Share</string>
     <string name="action_reply">Reply</string>
@@ -13,4 +35,5 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_needs">activity_needs</string>
     <string name="title_activity_main">Home</string>
+    <string name="title_activity_question_page">QuestionPage</string>
 </resources>

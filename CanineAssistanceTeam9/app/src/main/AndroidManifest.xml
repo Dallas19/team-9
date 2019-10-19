@@ -5,76 +5,44 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:screenOrientation="landscape"
-        android:configChanges="keyboardHidden|orientation"
         android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="landscape"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <service
-            android:name=".YourFirebaseMessagingService"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
-
+        <activity
+            android:name=".QuestionPage"
+            android:label="@string/title_activity_question_page"
+            android:parentActivityName=".MainPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.canineassistanceteam9.MainPage" />
+        </activity>
         <activity
             android:name=".MainPage"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".activity_needs"
-            android:label="@string/title_activity_needs"
-            ></activity>
+            android:label="@string/title_activity_needs" />
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
-
-<<<<<<< HEAD
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".MainPage"
-            android:label="@string/title_activity_main2"
-
-            android:theme="@style/AppTheme.NoActionBar" >
-            <intent-filter>
-                <action android:name=
-                    "android.intent.action.MAIN" />
-
-                <category android:name=
-                    "android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-=======
-            android:theme="@style/AppTheme.NoActionBar" >
-
-
-        </activity>
-
->>>>>>> 3c0394785b832aaed5dbe5a0841498651b0ee0cf
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".emergency"
             android:label="@string/title_activity_emergency"
             android:theme="@style/AppTheme.NoActionBar" />
-<<<<<<< HEAD
-        <activity android:name=".QuestionPage">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Main2Activity" />
-        </activity>
-=======
->>>>>>> 3c0394785b832aaed5dbe5a0841498651b0ee0cf
-
     </application>
 
 </manifest>

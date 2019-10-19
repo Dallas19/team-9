@@ -37,7 +37,7 @@ public class MainPage extends AppCompatActivity {
         setting_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //openQuestionPage();
+                openQuestionPage();
             }
         });
     }
@@ -47,10 +47,10 @@ public class MainPage extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    public void openQuestionPage(){
-//        Intent intent = new Intent(this, QuestionPage.class);
-//        startActivity(intent);
-//    }
+    public void openQuestionPage(){
+        Intent intent = new Intent(this, QuestionPage.class);
+        startActivity(intent);
+    }
 
 }
 
