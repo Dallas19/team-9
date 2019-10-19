@@ -16,7 +16,7 @@
         android:layout_height="228dp"
         android:layout_marginEnd="92dp"
 
-        android:text="@string/needs_button"
+        android:text="@string/emergency_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintHorizontal_bias="0.555"
@@ -29,7 +29,7 @@
         android:layout_width="311dp"
         android:layout_height="233dp"
         android:layout_marginEnd="220dp"
-        android:text="@string/emergency_button"
+        android:text="@string/needs_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
