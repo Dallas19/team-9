@@ -20,15 +20,21 @@
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
+<<<<<<< HEAD
 
+=======
+>>>>>>> 553d8edee8709da6c5b6b3cb819f3616ec181ba5
             android:theme="@style/AppTheme.NoActionBar" />
 
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
 
+<<<<<<< HEAD
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter></activity>
+=======
+
+
+>>>>>>> 553d8edee8709da6c5b6b3cb819f3616ec181ba5
         <activity
             android:name=".emergency"
             android:label="@string/title_activity_emergency"
