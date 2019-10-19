@@ -36,11 +36,10 @@ public class MainPage extends AppCompatActivity {
 
 
 
-
-public void openNewActivity (){
+    public void openNewActivity (){
         Intent intent = new Intent(this, Main2Activity.class);
         startActivity(intent);
-}
+    }
 
 }
 
