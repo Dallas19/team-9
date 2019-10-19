@@ -7,9 +7,6 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
-
-
-
     <Button
         android:id="@+id/aButton"
         android:layout_width="286dp"
@@ -19,21 +16,20 @@
         android:text="@string/emergency_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.511" />
+        app:layout_constraintVertical_bias="0.522" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="311dp"
         android:layout_height="233dp"
-        android:layout_marginEnd="220dp"
+        android:layout_marginEnd="176dp"
         android:text="@string/needs_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.515" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -43,9 +39,21 @@
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271" />
+        app:layout_constraintVertical_bias="0.21" />
+
+    <ImageButton
+        android:id="@+id/setting_button"
+        android:layout_width="67dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="4dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_settings_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
