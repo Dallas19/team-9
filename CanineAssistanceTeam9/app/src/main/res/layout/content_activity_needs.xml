@@ -25,6 +25,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.101" />
 
+
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
         android:layout_width="2731dp"
@@ -32,17 +33,16 @@
         android:scrollbarSize="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintHorizontal_bias="0.782"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.995">
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical" />
     </HorizontalScrollView>
-
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -93,22 +93,22 @@
         android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintHorizontal_bias="0.611"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-        app:layout_constraintVertical_bias="0.321" />
+        app:layout_constraintVertical_bias="0.276" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="204dp"
+        android:layout_marginBottom="392dp"
         android:text="@string/dog_drink"
         android:textColor="@android:color/background_light"
         android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -121,9 +121,9 @@
         android:textColor="@android:color/background_light"
         android:textSize="70sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.654"
+        app:layout_constraintHorizontal_bias="0.688"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="839dp" />
+        tools:layout_editor_absoluteY="1179dp" />
 
     <EditText
         android:id="@+id/editText6"
@@ -136,46 +136,46 @@
         android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintHorizontal_bias="0.625"
         app:layout_constraintStart_toEndOf="@+id/editText5"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.817" />
+        app:layout_constraintVertical_bias="0.75" />
 
     <ImageButton
         android:id="@+id/imageButton6"
-        android:layout_width="367dp"
-        android:layout_height="268dp"
+        android:layout_width="506dp"
+        android:layout_height="356dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.653"
+        app:layout_constraintVertical_bias="0.717"
         app:srcCompat="@drawable/water" />
 
     <ImageButton
         android:id="@+id/imageButton7"
-        android:layout_width="428dp"
-        android:layout_height="283dp"
+        android:layout_width="497dp"
+        android:layout_height="362dp"
         android:layout_marginTop="180dp"
         app:layout_constraintBottom_toBottomOf="@+id/editText5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.674"
+        app:layout_constraintHorizontal_bias="0.695"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.524"
+        app:layout_constraintVertical_bias="0.629"
         app:srcCompat="@drawable/dogsick" />
 
     <ImageButton
         android:id="@+id/imageButton9"
-        android:layout_width="390dp"
-        android:layout_height="337dp"
+        android:layout_width="485dp"
+        android:layout_height="407dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toEndOf="@+id/imageButton7"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.468"
+        app:layout_constraintVertical_bias="0.521"
         app:srcCompat="@drawable/download" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
